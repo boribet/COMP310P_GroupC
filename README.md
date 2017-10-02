@@ -1,3 +1,5 @@
 # COMP310P_GroupC
 
-#Lab 1 exercises
+#Lab 1 exercises 
+
+This is Sajjad Rahmanian.
