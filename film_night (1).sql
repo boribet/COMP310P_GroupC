@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 20, 2017 at 04:46 PM
+-- Generation Time: Oct 20, 2017 at 05:03 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -79,7 +79,8 @@ CREATE TABLE IF NOT EXISTS `film` (
   `film_id` int(11) NOT NULL,
   `lenght` time NOT NULL,
   `imdb_rating` int(11) NOT NULL,
-  `decription` varchar(255) NOT NULL
+  `decription` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
