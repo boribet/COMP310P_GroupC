@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 23, 2017 at 05:46 PM
+-- Generation Time: Oct 23, 2017 at 09:55 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -44,6 +44,7 @@ CREATE TABLE IF NOT EXISTS `event` (
   `event_name` varchar(255) NOT NULL,
   `location_id` int(11) NOT NULL,
   `event_time` datetime NOT NULL,
+  `event_length` time NOT NULL,
   `film_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -225,6 +226,7 @@ MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
+
 INSERT INTO user (username, password, email, first_name, last_name)
 VALUES ('denis', 'd45', 'denis@gmail.com', 'Denis', 'Suarez');
 INSERT INTO user (username, password, email, first_name, last_name)
@@ -265,14 +267,14 @@ VALUES (NULL, '89', '7.9', 'Zombies attack Texas.', 'Horror in Texas 3');
 INSERT INTO film (film_id, length, imdb_rating, description, title)
 VALUES (NULL, '147', '9.4', 'A quick tour around the ancient Greece.', 'Ancient Greece');
 
-INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES('Nachos and Horror Night', '4', '2017-11-01 17:30:00', '1');
-INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES('Fun times with a nice animated film!', '3', '2017-11-01 17:30:00', '2');
-INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES('Scary things and popcorn!', '2', '2017-10-21 14:45:00', '3');
-INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES('Greek night!', '1', '2017-11-01 17:30:00', '4');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
+VALUES('Nachos and Horror Night', '4', '2017-11-01 17:30:00','04:00:00', '1');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
+VALUES('Fun times with a nice animated film!', '3', '2017-11-01 03:30:00','02:30:00', '2');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
+VALUES('Scary things and popcorn!', '2', '2017-10-21 14:45:00','01:45:00', '3');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
+VALUES('Greek night!', '1', '2017-11-01 17:30:00','02:30:00','4');
 
 INSERT INTO event_host
 VALUES('1','4');
@@ -333,7 +335,4 @@ INSERT INTO reservation
 VALUES ('4', '1', '7');
 INSERT INTO reservation
 VALUES ('2', '1', '8');
-
-
-
 
