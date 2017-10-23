@@ -19,6 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `film_night`
 --
+CREATE DATABASE film_night;
 
 -- --------------------------------------------------------
 
@@ -246,92 +247,91 @@ INSERT INTO category (category)
 VALUES ('Adventure');
 
 INSERT INTO film_category
-VALUES(‘1’,’5’);
+VALUES('1','5');
 INSERT INTO film_category
-VALUES(‘2’,’1’);
+VALUES('2','1');
 INSERT INTO film_category
-VALUES(‘3’,’4’);
+VALUES('3','4');
 INSERT INTO film_category
-VALUES(‘4’,’3’);
+VALUES('4','3');
 
-INSERT INTO film (‘film_id’, ‘length’, ‘imdb_rating’, ‘description’, ‘title’)
-VALUES (NULL, ‘121’, ‘6.4’, ‘War between Germany and France.’, ‘The Great War 2’);
-INSERT INTO film (‘film_id’, ‘length’, ‘imdb_rating’, ‘description’, ‘title’)
-VALUES (NULL, ‘68’, ‘7.5’, ‘Toys break out to explore the outside world.’, ‘Toys 2’);
-INSERT INTO film (‘film_id’, ‘length’, ‘imdb_rating’, ‘description’, ‘title’)
-VALUES (NULL, ‘89’, ‘7.9’, ‘Zombies attack Texas.’, ‘Horror in Texas 3’);
-INSERT INTO film (‘film_id’, ‘length’, ‘imdb_rating’, ‘description’, ‘title’)
-VALUES (NULL, ‘147’, ‘9.4’, ‘A quick tour around the ancient Greece.’, ‘Ancient Greece’);
+INSERT INTO film (film_id, length, imdb_rating, description, title)
+VALUES (NULL, '121', '6.4', 'War between Germany and France.', 'The Great War 2');
+INSERT INTO film (film_id, length, imdb_rating, description, title)
+VALUES (NULL, '68', '7.5', 'Toys break out to explore the outside world.', 'Toys 2');
+INSERT INTO film (film_id, length, imdb_rating, description, title)
+VALUES (NULL, '89', '7.9', 'Zombies attack Texas.', 'Horror in Texas 3');
+INSERT INTO film (film_id, length, imdb_rating, description, title)
+VALUES (NULL, '147', '9.4', 'A quick tour around the ancient Greece.', 'Ancient Greece');
 
 INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES(‘Nachos and Horror Night’, ‘4’, '2017-11-01 17:30:00', ‘1’)
+VALUES('Nachos and Horror Night', '4', '2017-11-01 17:30:00', '1');
 INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES(‘Fun times with a nice animated film! ’, ‘3’, '2017-11-01 17:30:00', ‘2’)
+VALUES('Fun times with a nice animated film!', '3', '2017-11-01 17:30:00', '2');
 INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES(‘Scary things and popcorn!’, ‘2’, '2017-10-21 14:45:00', ‘3’)
+VALUES('Scary things and popcorn!', '2', '2017-10-21 14:45:00', '3');
 INSERT INTO event(event_name, location_id, event_time, film_id)
-VALUES(‘Greek night!’, ‘1’, '2017-11-01 17:30:00', ‘4’)
+VALUES('Greek night!', '1', '2017-11-01 17:30:00', '4');
 
-Sample data: event host
 INSERT INTO event_host
-VALUES(‘1’,’4’);
+VALUES('1','4');
 INSERT INTO event_host
-VALUES(‘2’,’3’);
+VALUES('2','3');
 INSERT INTO event_host
-VALUES(‘3’,’2’);
+VALUES('3','2');
 INSERT INTO event_host
-VALUES(‘4’,’1’);
+VALUES('4','1');
 
 #so far location capaity is restricted to 2
 INSERT INTO location(location_name, capacity)
-VALUES(‘Grand Hall’, ‘2’);
+VALUES('Grand Hall', '2');
 INSERT INTO location(location_name, capacity)
-VALUES(‘Medical Sciences Student Screening Room’, ‘2’);
+VALUES('Medical Sciences Student Screening Room', '2');
 INSERT INTO location(location_name, capacity)
-VALUES(‘UCL Screening Room’, ‘2’);
+VALUES('UCL Screening Room', '2');
 INSERT INTO location(location_name, capacity)
-VALUES(‘Birckbeck Open Space’, ‘2’);
+VALUES('Birckbeck Open Space','‘2');
 
 INSERT INTO feedback(user_id, event_id, rating, notes)
-VALUES(‘1’, ‘1’, ‘5’, ‘The food was amazing!’)
+VALUES('1', '1', '5', 'The food was amazing!');
 INSERT INTO feedback(user_id, event_id, rating, notes)
-VALUES(‘3’, ‘2’, ‘5’, ‘I hated the location and the host was rude!’)
+VALUES('3', '2', '5', 'I hated the location and the host was rude!');
 
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-22 00:00:00', ‘5’);
+VALUES('2017-10-22 00:00:00', '5');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-23 20:30:00', ‘5’);
+VALUES('2017-10-23 20:30:00', '5');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-22 10:34:50', ‘8’);
+VALUES('2017-10-22 10:34:50', '8');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-21 19:08:09', ‘8’);
+VALUES('2017-10-21 19:08:09', '8');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-20 16:48:60', ‘3’);
+VALUES('2017-10-20 16:48:60', '3');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-20 12:17:40', ‘3’);
+VALUES('2017-10-20 12:17:40', '3');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-19 17:00:50', ‘4’);
+VALUES('2017-10-19 17:00:50', '4');
 INSERT INTO ticket(purchase, price)
-VALUES('2017-10-22 11:50:40', ‘4’);
+VALUES('2017-10-22 11:50:40', '4');
 
 
 
-INSERT INTO booking
-VALUES (‘1’, ‘2’, ‘1’)
-INSERT INTO booking
-VALUES (‘4’, ‘2’, ‘2’)
-INSERT INTO booking
-VALUES (‘2’, ‘3’, ‘3’)
-INSERT INTO booking
-VALUES (‘4’, ‘3’, ‘4’)
-INSERT INTO booking
-VALUES (‘3’, ‘4’, ‘5’)
-INSERT INTO booking
-VALUES (‘1’, ‘4’, ‘6’)
-INSERT INTO booking
-VALUES (‘4’, ‘1’, ‘7’)
-INSERT INTO booking
-VALUES (‘2’, ‘1’, ‘8’)
+INSERT INTO reservation
+VALUES ('1', '2', '1');
+INSERT INTO reservation
+VALUES ('4', '2', '2');
+INSERT INTO reservation
+VALUES ('2', '3', '3');
+INSERT INTO reservation
+VALUES ('4', '3', '4');
+INSERT INTO reservation
+VALUES ('3', '4', '5');
+INSERT INTO reservation
+VALUES ('1', '4', '6');
+INSERT INTO reservation
+VALUES ('4', '1', '7');
+INSERT INTO reservation
+VALUES ('2', '1', '8');
 
 
 
