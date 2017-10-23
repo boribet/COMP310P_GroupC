@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 22, 2017 at 09:03 PM
+-- Generation Time: Oct 23, 2017 at 03:05 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -53,7 +53,8 @@ CREATE TABLE IF NOT EXISTS `event` (
 `event_id` int(11) NOT NULL,
   `event_name` varchar(255) NOT NULL,
   `location_id` int(11) NOT NULL,
-  `event_time` datetime NOT NULL
+  `event_time` datetime NOT NULL,
+  `film_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
