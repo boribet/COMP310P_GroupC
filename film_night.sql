@@ -223,7 +223,6 @@ MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-
 INSERT INTO user (username, password, email, first_name, last_name)
 VALUES ('denis', 'd45', 'denis@gmail.com', 'Denis', 'Suarez');
 INSERT INTO user (username, password, email, first_name, last_name)
@@ -298,21 +297,21 @@ VALUES(‘1’, ‘1’, ‘5’, ‘The food was amazing!’)
 INSERT INTO feedback(user_id, event_id, rating, notes)
 VALUES(‘3’, ‘2’, ‘5’, ‘I hated the location and the host was rude!’)
 
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-22 00:00:00', ‘5’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-23 20:30:00', ‘5’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-22 10:34:50', ‘8’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-21 19:08:09', ‘8’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-20 16:48:60', ‘3’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-20 12:17:40', ‘3’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-19 17:00:50', ‘4’);
-INSERT INTO ticket(purhcase, price)
+INSERT INTO ticket(purchase, price)
 VALUES('2017-10-22 11:50:40', ‘4’);
 
 
@@ -333,6 +332,7 @@ INSERT INTO booking
 VALUES (‘4’, ‘1’, ‘7’)
 INSERT INTO booking
 VALUES (‘2’, ‘1’, ‘8’)
+
 
 
 
