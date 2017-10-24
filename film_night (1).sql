@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `film_night`
 --
+CREATE DATABASE film_night;
+USE DATABASE film_night;
 
 -- --------------------------------------------------------
 
@@ -377,3 +379,13 @@ MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+INSERT INTO event_type(event_id, type_id)
+VALUES('1','1');
+INSERT INTO event_type(event_id, type_id)
+VALUES('2','2');
+INSERT INTO event_type(event_id, type_id)
+VALUES('3','4');
+INSERT INTO event_type(event_id, type_id)
+VALUES('4','3');
