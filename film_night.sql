@@ -23,7 +23,6 @@ CREATE DATABASE film_night;
 USE film_night;
 
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `category`
 --
@@ -45,7 +44,8 @@ CREATE TABLE IF NOT EXISTS `event` (
   `location_id` int(11) NOT NULL,
   `event_time` datetime NOT NULL,
   `event_length` time NOT NULL,
-  `film_id` int(11) NOT NULL
+  `film_id` int(11) NOT NULL,
+  `ticket_number` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -80,6 +80,7 @@ CREATE TABLE IF NOT EXISTS `feedback` (
 
 CREATE TABLE IF NOT EXISTS `film` (
 `film_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
   `length` int(11) NOT NULL,
   `imdb_rating` float NOT NULL,
   `description` varchar(255) NOT NULL,
@@ -225,6 +226,7 @@ MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 
 
 INSERT INTO user (username, password, email, first_name, last_name)
