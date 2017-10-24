@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 -- Database: `film_night`
 --
 CREATE DATABASE film_night;
-USE DATABASE film_night;
+USE film_night;
 
 -- --------------------------------------------------------
 
@@ -262,7 +262,7 @@ CREATE TABLE IF NOT EXISTS `type` (
 
 INSERT INTO `type` (`type_id`, `name`) VALUES
 (1, 'Student'),
-(2, 'Non Student'),
+(2, 'Alumni'),
 (3, 'Under 18'),
 (4, 'Over 18');
 
