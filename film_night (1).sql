@@ -263,8 +263,7 @@ CREATE TABLE IF NOT EXISTS `type` (
 INSERT INTO `type` (`type_id`, `name`) VALUES
 (1, 'Student'),
 (2, 'Alumni'),
-(3, 'Under 18'),
-(4, 'Over 18');
+(3, 'Open'),
 
 -- --------------------------------------------------------
 
@@ -370,7 +369,7 @@ MODIFY `ticket_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 -- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `user`
 --
@@ -386,6 +385,6 @@ VALUES('1','1');
 INSERT INTO event_type(event_id, type_id)
 VALUES('2','2');
 INSERT INTO event_type(event_id, type_id)
-VALUES('3','4');
+VALUES('3','2');
 INSERT INTO event_type(event_id, type_id)
 VALUES('4','3');
