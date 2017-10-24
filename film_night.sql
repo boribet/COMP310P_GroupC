@@ -366,4 +366,13 @@ VALUES('Under 18');
 INSERT INTO type(name)
 VALUES('Over 18');
 
+INSERT INTO event_type(event_id, type_id)
+VALUES('1','1');
+INSERT INTO event_type(event_id, type_id)
+VALUES('2','2');
+INSERT INTO event_type(event_id, type_id)
+VALUES('3','4');
+INSERT INTO event_type(event_id, type_id)
+VALUES('4','3');
+
 
