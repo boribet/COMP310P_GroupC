@@ -219,7 +219,7 @@ ALTER TABLE `type`
 ---- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT;
+MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `category`
