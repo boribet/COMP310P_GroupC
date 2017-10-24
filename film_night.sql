@@ -147,6 +147,26 @@ CREATE TABLE IF NOT EXISTS `user` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event_type`
+--
+
+CREATE TABLE IF NOT EXISTS `event_type` (
+  `event_id` int(11) NOT NULL,
+  `type_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `type`
+--
+
+CREATE TABLE IF NOT EXISTS `type` (
+`type_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
 
 --
 -- Indexes for dumped tables
@@ -336,4 +356,14 @@ INSERT INTO reservation
 VALUES ('4', '1', '7');
 INSERT INTO reservation
 VALUES ('2', '1', '8');
+
+INSERT INTO type(name)
+VALUES('Student');
+INSERT INTO type(name)
+VALUES('Alumni');
+INSERT INTO type(name)
+VALUES('Under 18');
+INSERT INTO type(name)
+VALUES('Over 18');
+
 
