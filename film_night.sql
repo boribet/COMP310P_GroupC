@@ -80,7 +80,6 @@ CREATE TABLE IF NOT EXISTS `feedback` (
 
 CREATE TABLE IF NOT EXISTS `film` (
 `film_id` int(11) NOT NULL,
-  `category_id` int(11) NOT NULL,
   `length` int(11) NOT NULL,
   `imdb_rating` float NOT NULL,
   `description` varchar(255) NOT NULL,
