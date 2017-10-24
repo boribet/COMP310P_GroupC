@@ -267,14 +267,14 @@ VALUES (NULL, '89', '7.9', 'Zombies attack Texas.', 'Horror in Texas 3');
 INSERT INTO film (film_id, length, imdb_rating, description, title)
 VALUES (NULL, '147', '9.4', 'A quick tour around the ancient Greece.', 'Ancient Greece');
 
-INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
-VALUES('Nachos and Horror Night', '4', '2017-11-01 17:30:00','04:00:00', '1');
-INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
-VALUES('Fun times with a nice animated film!', '3', '2017-11-01 03:30:00','02:30:00', '2');
-INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
-VALUES('Scary things and popcorn!', '2', '2017-10-21 14:45:00','01:45:00', '3');
-INSERT INTO event(event_name, location_id, event_time, event_length, film_id)
-VALUES('Greek night!', '1', '2017-11-01 17:30:00','02:30:00','4');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id, ticket_number)
+VALUES('Nachos and Horror Night', '4', '2017-11-01 17:30:00','04:00:00', '1', '2');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id, ticket_number)
+VALUES('Fun times with a nice animated film!', '3', '2017-11-01 03:30:00','02:30:00', '2', '2');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id, ticket_number)
+VALUES('Scary things and popcorn!', '2', '2017-10-21 14:45:00','01:45:00', '3', '2');
+INSERT INTO event(event_name, location_id, event_time, event_length, film_id, ticket_number)
+VALUES('Greek night!', '1', '2017-11-01 17:30:00','02:30:00','4', '2');
 
 INSERT INTO event_host
 VALUES('1','4');
