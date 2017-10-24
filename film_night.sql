@@ -207,10 +207,19 @@ ALTER TABLE `ticket`
 --
 ALTER TABLE `user`
  ADD PRIMARY KEY (`user_id`);
+ --
+-- Indexes for table `type`
+--
+ALTER TABLE `type`
+ ADD PRIMARY KEY (`type_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
+
+---- AUTO_INCREMENT for table `type`
 --
+ALTER TABLE `type`
+MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `category`
