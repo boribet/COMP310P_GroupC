@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 24, 2017 at 07:07 PM
+-- Generation Time: Oct 24, 2017 at 07:26 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `film_night`
 --
-CREATE DATABASE film_night;
-USE film_night;
 
 -- --------------------------------------------------------
 
@@ -102,6 +100,16 @@ CREATE TABLE IF NOT EXISTS `event_type` (
   `event_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `event_type`
+--
+
+INSERT INTO `event_type` (`event_id`, `type_id`) VALUES
+(1, 1),
+(2, 2),
+(3, 2),
+(4, 3);
 
 -- --------------------------------------------------------
 
@@ -262,8 +270,8 @@ CREATE TABLE IF NOT EXISTS `type` (
 
 INSERT INTO `type` (`type_id`, `name`) VALUES
 (1, 'Student'),
-(2, 'Alumni'),
-(3, 'Open'),
+(2, 'Non Student'),
+(3, 'Open');
 
 -- --------------------------------------------------------
 
@@ -369,7 +377,7 @@ MODIFY `ticket_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 -- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `user`
 --
@@ -378,13 +386,3 @@ MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-INSERT INTO event_type(event_id, type_id)
-VALUES('1','1');
-INSERT INTO event_type(event_id, type_id)
-VALUES('2','2');
-INSERT INTO event_type(event_id, type_id)
-VALUES('3','2');
-INSERT INTO event_type(event_id, type_id)
-VALUES('4','3');
