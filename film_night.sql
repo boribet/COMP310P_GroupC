@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 24, 2017 at 07:26 PM
+-- Generation Time: Oct 25, 2017 at 12:46 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -141,7 +141,6 @@ INSERT INTO `feedback` (`user_id`, `event_id`, `rating`, `notes`) VALUES
 
 CREATE TABLE IF NOT EXISTS `film` (
 `film_id` int(11) NOT NULL,
-  `category_id` int(11) NOT NULL,
   `length` int(11) NOT NULL,
   `imdb_rating` float NOT NULL,
   `description` varchar(255) NOT NULL,
@@ -152,11 +151,11 @@ CREATE TABLE IF NOT EXISTS `film` (
 -- Dumping data for table `film`
 --
 
-INSERT INTO `film` (`film_id`, `category_id`, `length`, `imdb_rating`, `description`, `title`) VALUES
-(1, 0, 121, 6.4, 'War between Germany and France.', 'The Great War 2'),
-(2, 0, 68, 7.5, 'Toys break out to explore the outside world.', 'Toys 2'),
-(3, 0, 89, 7.9, 'Zombies attack Texas.', 'Horror in Texas 3'),
-(4, 0, 147, 9.4, 'A quick tour around the ancient Greece.', 'Ancient Greece');
+INSERT INTO `film` (`film_id`, `length`, `imdb_rating`, `description`, `title`) VALUES
+(1, 121, 6.4, 'War between Germany and France.', 'The Great War 2'),
+(2, 68, 7.5, 'Toys break out to explore the outside world.', 'Toys 2'),
+(3, 89, 7.9, 'Zombies attack Texas.', 'Horror in Texas 3'),
+(4, 147, 9.4, 'A quick tour around the ancient Greece.', 'Ancient Greece');
 
 -- --------------------------------------------------------
 
@@ -237,7 +236,7 @@ CREATE TABLE IF NOT EXISTS `ticket` (
 `ticket_id` int(11) NOT NULL,
   `purchase` date NOT NULL,
   `price` int(11) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `ticket`
@@ -262,7 +261,7 @@ INSERT INTO `ticket` (`ticket_id`, `purchase`, `price`) VALUES
 CREATE TABLE IF NOT EXISTS `type` (
 `type_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `type`
@@ -372,12 +371,12 @@ MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `ticket`
 --
 ALTER TABLE `ticket`
-MODIFY `ticket_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `ticket_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `user`
 --
