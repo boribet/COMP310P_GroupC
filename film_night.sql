@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `film_night`
 --
+CREATE DATABASE film_night;
+USE film_night;
 
 -- --------------------------------------------------------
 
