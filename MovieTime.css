@@ -1,0 +1,19 @@
+.navbar{
+	background-color: #5cafd1;
+	height: 50px;
+	margin-bottom:  20px;
+}
+#logo{
+	width: 50px;
+}
+.nav-item{
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.nav-link{
+	color: white;
+}
+body{
+	background-color: #edf7ff;
+	font-family: 'Barlow Condensed', sans-serif;
+}
