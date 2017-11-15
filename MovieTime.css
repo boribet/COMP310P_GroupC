@@ -17,3 +17,7 @@ body{
 	background-color: #edf7ff;
 	font-family: 'Barlow Condensed', sans-serif;
 }
+.input-group{
+	width: auto;
+	margin: 20px;
+}
